@@ -5,5 +5,6 @@ if (numberOne>numberTwo){
 
 } return numberTwo;
 }
-let mostrar=PickOne(33,6);
-console.log(mostrar);
+//let mostrar=PickOne(33,6);
+//console.log(mostrar);
+console.log(PickOne(33,6))

@@ -1,7 +1,7 @@
-const avengers = ['Hulk', 'Thor', 'IronMan', 'Captain A.', 'Spiderman', 'Captain M.'];
+//const avengers = ['Hulk', 'Thor', 'IronMan', 'Captain A.', 'Spiderman', 'Captain M.'];
 
 //let sumatoria=0;
-
+/*
 function findLongestWord(param) {
 let  temporal=param;//olvide crear una variable scope, siempre me daba la respuesta del param porque esta fuera de scope
     while (temporal[1].length=0){
@@ -28,4 +28,19 @@ console.log(temporal2);//me daba la respuesta de la variable global, no la de la
     //console.log(sumatoria);         //me muestra el total
 //}
 
+*/
+// SOLUCIOOOOOOOONNNN
 
+const avengers = ['Hulk', 'Thor', 'IronMan', 'Captain A.', 'Spiderman', 'Captain M.'];
+
+function findLongestWord(list) {
+let longestWord="";
+for (const item of list){
+    if(item.length>longestWord.length){
+        longestWord=item;
+    }
+
+}
+console.log("La palabra mas larga es:" + longestWord);
+}
+findLongestWord(avengers)

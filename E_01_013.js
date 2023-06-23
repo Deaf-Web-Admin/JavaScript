@@ -16,8 +16,15 @@ const duplicates = [
     'pasta',
     'soda'
     ];
-    function removeDuplicates(param) {
-    // insert code
-    }
+function removeDuplicates(param) {
 
-console.log(removeDuplicates(duplicates));
+    const uniques = [];
+    for (const element of param) {
+        if(!uniques.includes(element)){
+uniques.push(element);
+        }
+    }
+    console.log(uniques);
+}
+
+removeDuplicates(duplicates);

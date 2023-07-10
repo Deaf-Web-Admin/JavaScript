@@ -7,3 +7,7 @@ function sumAll(param) {
 return sumatoria;
 }
 console.log(sumAll(numbers));
+
+//otra solucion seria (descubierto en JS2)
+//const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue);
+//console.log(sum); // 15
